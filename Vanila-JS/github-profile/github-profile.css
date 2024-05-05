@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif, "Courier New", Courier, monospace;
+}
+
+.main-conatiner {
+  height: 100vh;
+  background-color: #20293a;
+  width: 100vw;
+}
+
+.items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  background-image: url("./images/hero-image-github-profile.png");
+  height: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search-container {
+  background-color: #20293a;
+  display: flex;
+  padding: 15px;
+  border-radius: 8px;
+  width: 35vw;
+  justify-content: flex-start !important;
+
+  input {
+    background-color: #20293a !important;
+    border: 0;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 90%;
+    color: aliceblue;
+    outline: none;
+  }
+}
+
+.github-image-container {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background-color: #cdd5e0;
+  /* top: 200px; */
+  /* left: 20%; */
+  border: 5px solid #20293a;
+  border-radius: 8px;
+}
+
+.stats-main-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+  margin-left: 10%;
+  font-size: 12px;
+  width: 80%;
+
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .stats {
+      background-color: #111729 !important;
+      height: 50px;
+      width: auto;
+      padding: 10px;
+      justify-content: flex-start;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px;
+      flex-grow: 1;
+    }
+
+    .stat-label {
+      border-right: 1px solid #4a5567;
+      color: #4a5567;
+      padding: 8px;
+      text-align: start;
+    }
+
+    .stat-number {
+      color: #cdd5e0;
+      padding: 10px;
+    }
+  }
+}
+
+.repo-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10%;
+  width: 100%;
+  color: #cdd5e0;
+  margin-top: 50px;
+
+  .repo-details-conatiner {
+    display: flex;
+    flex-direction: column;
+    background-color: #1d1b48;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    flex-grow: 1;
+    margin: 5px;
+  }
+
+  .repo-cards-conatiner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+}
